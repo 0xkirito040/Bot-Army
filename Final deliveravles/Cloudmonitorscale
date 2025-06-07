@@ -1,0 +1,9 @@
+. **Cloud Deployment**:
+   - Bots deployed to GKE.
+   - Dashboard hosted on Heroku.
+
+2. **Monitoring**:
+   - Real-time bot activity on the dashboard.
+
+3. **Scaling**:
+   - Ability to scale bots dynamically using Kubernetes.
