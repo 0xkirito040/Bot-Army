@@ -1,0 +1,4 @@
+bash
+   gcloud container clusters create bot-cluster --num-nodes=1 --machine-type=e2-small
+   kubectl apply -f deployment.yaml
+   ```
