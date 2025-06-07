@@ -1,0 +1,23 @@
+1. **Create a Kubernetes Deployment**:
+   Save this as `deployment.yaml`:
+   ```yaml
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: bot-deployment
+   spec:
+     replicas: 3
+     selector:
+       matchLabels:
+         app: bot
+     template:
+       metadata:
+         labels:
+           app: bot
+       spec:
+         containers:
+           - name: bot
+             image: gcr.io/YOUR_PROJECT_ID/bot-image:latest
+             ports:
+               - containerPort: 9999
+   ```
