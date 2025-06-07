@@ -1,0 +1,4 @@
+**Expose the Deployment**:
+   ```bash
+   kubectl expose deployment bot-deployment --type=LoadBalancer --port=80 --target-port=9999
+   ```
