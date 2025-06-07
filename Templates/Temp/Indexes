@@ -1,0 +1,24 @@
+*Create `templates/index.html`**:
+   ```html
+   <!DOCTYPE html>
+   <html>
+   <head>
+       <title>Bot Dashboard</title>
+       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+       <div class="container">
+           <h1>Bot Dashboard</h1>
+           <form action="/send_command" method="post">
+               <div class="form-group">
+                   <label for="command">Command:</label>
+                   <input type="text" class="form-control" id="command" name="command" placeholder="Enter command">
+               </div>
+               <button type="submit" class="btn btn-primary">Send to All Bots</button>
+           </form>
+       </div>
+   </body>
+   </html>
+   ```
+
+---
